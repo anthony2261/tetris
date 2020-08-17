@@ -1,0 +1,50 @@
+
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/app.css">
+    <title>
+      Hello world!
+    </title>
+    <audio id="theme-music" loop autoplay>
+      <!-- <source src="Tetris.ogg" > -->
+      <source src="mus_papyrusboss.ogg" >
+
+      Your browser does not support the audio element.
+    </audio>
+
+  </head>
+  <body id="body" class="body">
+    <div class="box">
+      <div id="start-menu-box" class="box__start-menu">
+        <div id="high-score" class="box__high-score">High Scores : <br> 1st : <br> 2nd : <br> 3rd :</div>
+        <button type="button" id="start-button" class="box__start-menu-button">START GAME</button>
+        <button type="button" id="keybindings-button" class="box__start-menu-button">KEYBINDINGS</button>
+        <div id="key-instruction" class="box__key-instruction"></div>
+        <input type="text" style="display: none" id="input-field"></input>
+      </div>
+
+      <div id="game-over-screen" class="box__game-over">
+        GAME OVER :(<br>
+        Enter your name : <br>
+        <input type="text" id="name-field"></input>
+        <button type="button" id="go-to-menu-button" class="box__start-menu-button">GO TO MENU</button>
+      </div>
+    </div>
+    <div id="pause"></div>
+    <div class="info-block">
+      <div class="info-block__score-combo-box">
+        <div id="score-box" class="info-block__score-box"> </div>
+        <div id="combo-box" class="info-block__combo-box">
+          <div id="times" class="info-block__times"></div>
+          <div id="arrow" class="info-block__arrow"></div>
+        </div>
+      </div>
+      <div class="next">Next</div>
+      <div class="held">Held</div>
+      <div class="keys">Keys: <br> R: rotate <br> H: hold <br> P: Pause/Unpause <br> Left/Right/Down Arrows: guess <br> Space: slam <br> M: Mute</div>
+    </div>
+  </body>
+  <script defer src="index.js"></script>
+  <script src="http://localhost:35729/livereload.js"></script>
+</html>
